@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f2f6fc;
+}
+
+/************* header *************/
+
+header {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  align-items: center;
+  padding: 0 10vw;
+}
+
+header strong {
+  font-size: 1.2rem;
+}
+
+.burgerIcon {
+  display: none !important;
+}
+
+.mainName {
+  text-decoration: none;
+  color: black;
+}
+
+.headerNav {
+  display: flex;
+  gap: 1.65vw;
+  align-items: center;
+}
+
+.headerNav a {
+  text-decoration: none;
+  color: gray;
+}
+
+.headerBTN {
+  background-color: #00ba94;
+  color: white;
+  margin-left: 2vw;
+}
+
+.headerBTN:hover {
+  background-color: #3d844d;
+  color: white;
+}
+
+.fa-angle-right {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.fa-arrow-right {
+  font-size: 0.8rem;
+}
+
+.settings {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 8.5%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000000000;
+}
+
+.fa-gear {
+  color: black;
+}
+/************* main *************/
+.mainIdea {
+  background-color: #0061f2;
+  width: 100%;
+  height: 63vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 0px 27vw;
+  gap: 1vw;
+}
+
+.mainIdeaTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainIdea p {
+  text-align: center;
+  color: #88aef7;
+}
+
+.mainIdeaNav {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  align-items: center;
+}
+
+.mainIdeaNav a {
+  text-decoration: none;
+  color: white;
+}
+
+.mainIdeaNav button {
+  background-color: #00ba94;
+  color: white;
+}
+
+.mainIdeaNav button:hover {
+  background-color: #3d844d;
+  color: white;
+}
+
+.cardContainer {
+  padding: 0vw 15vw;
+}
+
+.card {
+  border: none;
+  background: none;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: relative;
+}
+
+.card-text {
+  font-size: 0.8rem;
+}
+
+.pricing {
+  background-color: gray;
+  color: white;
+  width: 45px;
+  height: 25px;
+  position: absolute;
+  transform: translate(-100%, -0%);
+  top: 5%;
+  left: 100%;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  color: white;
+  opacity: 1;
+}
+
+.pricingContainer {
+  margin-top: 3vw;
+}
+
+.halfFooter {
+  padding: 0 15vw;
+  border-bottom: 1px solid grey;
+}
+
+.iconContainer {
+  background-color: red;
+  border-radius: 50px;
+  width: 3.9vw;
+  height: 3.9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorieContainer {
+  width: 20vw;
+  height: 8.5vw;
+  justify-content: center;
+  display: flex;
+  border-bottom: 5px solid #e81500;
+}
+
+.fa-car {
+  color: white;
+  font-size: 1.5rem;
+}
+.categorieName {
+  margin-top: 5vw;
+  position: absolute;
+}
+
+.sndCategories {
+  margin-bottom: 6vw;
+}
+
+/************* footer *************/
+
+footer {
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.infoContainers {
+  color: gray;
+  margin-top: 8vw;
+  gap: 10vw;
+}
+
+.fstRowInfo {
+  gap: 5vw;
+}
+
+.sndRowInfo {
+  gap: 5vw;
+}
+
+.thirdRowInfo {
+  gap: 5vw;
+}
+
+.infoContainers strong {
+  text-transform: uppercase;
+}
+
+.infoContainers a {
+  text-decoration: none;
+  color: gray;
+}
+
+.cityContainers a {
+  text-decoration: none;
+}
+
+.policy {
+  border-top: 1px solid grey;
+  padding: 0 15vw;
+  margin-top: 7vw;
+}
+
+.fa-circle {
+  font-size: 0.2rem;
+}
+
+@media only screen and (max-width: 1040px) {
+  .iconContainer {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-top: 0.5vw !important;
+  }
+
+  .fa-car {
+    font-size: 0.8rem;
+    margin-top: 0 !important;
+  }
+  .categorieName {
+    margin-top: 4.5vw;
+  }
+
+  footer {
+    padding: 0 4vw;
+  }
+
+  .halfFooter {
+    padding: 0 4vw;
+  }
+  .cardContainer {
+    padding: 0 4vw;
+  }
+
+  .policy {
+    padding: 0 4vw;
+  }
+
+  .recentTextContainer {
+    padding: 0 4vw !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .categorieName {
+    margin-top: 3.5vw;
+  }
+
+  .burgerIcon {
+    display: flex !important;
+  }
+
+  .headerNav {
+    display: none;
+  }
+
+  .pricing {
+    width: 30px;
+    height: 17px;
+    top: 3%;
+  }
+
+  footer * {
+    font-size: 0.7rem !important;
+  }
+
+  .policy {
+    font-size: 0.7rem !important;
+  }
+
+  .mainIdea {
+    padding: 0 5vw;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .mediaCardsContainer {
+    flex-direction: column;
+  }
+
+  .fstCategories {
+    flex-direction: column;
+  }
+
+  .sndCategories {
+    flex-direction: column;
+  }
+
+  .categorieContainer {
+    width: 100%;
+    height: 15vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .categorieName {
+    position: relative;
+    margin: 0px;
+  }
+
+  .iconContainer {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  
+  .card {
+    width: 43.5vw;
+    height: 38vh;
+  }
+
+  .infoContainers {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (max-width: 370px) {
+  .cityContainers {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .policy {
+    font-size: 0.5rem !important;
+    gap: 5vw;
+  }
+}
